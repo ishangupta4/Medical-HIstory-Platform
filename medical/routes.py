@@ -5,6 +5,7 @@ from flask import render_template, url_for, flash, redirect, request, abort
 from flask_login import login_user, current_user, logout_user, login_required
 from medical import app, db, bcrypt
 from medical.models import User, MedicalHistory
+from medical.forms import UserRegistrationForm, LoginForm
 
 
 @app.route("/")
